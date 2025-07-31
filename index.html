@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marbella Residential Complex - Роскошная недвижимость в Марбелье</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div>
+    <!-- Burger Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+        <nav class="menu-overlay__nav">
+            <ul class="menu-overlay__list">
+                <li class="menu-overlay__item"><a href="#contact" class="menu-overlay__link">Contact</a></li>
+                <li class="menu-overlay__item"><a href="#guide" class="menu-overlay__link">Guide</a></li>
+                <li class="menu-overlay__item"><a href="#gallery" class="menu-overlay__link">Photo Gallery</a></li>
+                <li class="menu-overlay__item"><a href="#location" class="menu-overlay__link">Location</a></li>
+                <li class="menu-overlay__item"><a href="#video" class="menu-overlay__link">Video</a></li>
+                <li class="menu-overlay__item"><a href="#reviews" class="menu-overlay__link">Reviews</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class='wrapper'>
+        <header class="hero__header">
+            <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+            </button>
+            
+            <a href="https://wa.me/34611004850" class="whatsapp-btn" target="_blank" rel="noopener">
+                <span class="whatsapp-btn__text">WhatsApp</span>
+            </a>
+        </header>
+        <main class="home-page">
+            <!-- Block 1: Hero Section -->
+            <section class="hero">
+                <div class="hero__background" style="background-image: url('img/gallery/15.png');"></div>
+                <div class="hero__overlay"></div>
+                
+                <div class='container'>
+                    <div class="hero__content">
+                        <h1 class="hero__title">Marbella Residential Complex</h1>
+                        <div class="hero__address">
+                            <svg class="hero__address-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <a href="https://maps.google.com/?q=Marbella,+Spain" target="_blank" rel="noopener" class="hero__address-link">
+                                Av. Ricardo Soriano, 29601 Marbella, Spain
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 2: Contact -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="contact__content">
+                        <div class="contact__form-wrapper">
+                            <form class="contact-form" id="contactForm">
+                                <div class="contact-form__field">
+                                    <input type="text" id="name" name="name" class="contact-form__input" placeholder="Name" autocomplete="off">
+                                </div>
+                                
+                                <div class="contact-form__field">
+                                    <div class="phone-input">
+                                        <input type="tel" id="phone" name="phone" class="phone-input__number" placeholder="Phone number" autocomplete="off">
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-form__field">
+                                    <input type="email" id="email" name="email" class="contact-form__input" placeholder="Email" autocomplete="off">
+                                </div>
+                                
+                                <div class="contact-form__checkboxes">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="privacy">
+                                        <span class="checkbox__checkmark"></span>
+                                        <span class="checkbox__text">I agree to the <a href="privacy-policy.html" class="checkbox__link">privacy policy</a></span>
+                                    </label>
+                                    
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="newsletter">
+                                        <span class="checkbox__checkmark"></span>
+                                        <span class="checkbox__text">I agree to receive information by email</span>
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="contact-form__submit">Send</button>
+                            </form>
+                            
+                            <div class="contact__privacy-info">
+                                <p class="contact__privacy-text">
+                                    We protect your personal data in accordance with GDPR requirements. 
+                                    <a href="privacy-policy.html" class="contact__privacy-expand" id="privacyExpand">Expand</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__manager">
+                            <div class="manager-card">
+                                <img src="img/contact/01.png" 
+                                    alt="Property Manager" class="manager-card__photo">
+                                <div class="manager-card__content">
+                                    <div class="manager-card-mobile__photo">
+                                        <img src="img/contact/02.png" alt="Property Manager">
+                                    </div>
+                                    <h3 class="manager-card__name">Javier Delgado</h3>
+                                    <p class="manager-card__position">Sales Expert for Apartments in Urbanizacion Malibu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 3: Guide -->
+            <section class="guide" id="guide">
+                <div class="container">
+                    <h2 class="section-title">Guide</h2>
+                    <article class="guide-article">
+                        <header class="guide-article__header">
+                            <h3 class="guide-article__title">Your Complete Guide to Investing in Marbella Real Estate</h3>
+                            <div class="guide-article__meta">
+                                <img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                                    alt="Elena Rodriguez" class="guide-article__author-photo">
+                                <div class="guide-article__author-info">
+                                    <span class="guide-article__author">Elena Rodriguez</span>
+                                    <span class="guide-article__position">Senior Property Manager</span>
+                                    <time class="guide-article__date">December 2024</time>
+                                    <span class="guide-article__read-time">5 min read</span>
+                                </div>
+                            </div>
+                        </header>
+                        
+                        <div class="guide-article__content">
+                            <p>
+                                Marbella continues to be one of Europe's most sought-after destinations for luxury real estate investment. 
+                                With its perfect climate, stunning beaches, and world-class amenities, this Costa del Sol gem offers 
+                                exceptional opportunities for both lifestyle and investment purposes.
+                            </p>
+                            
+                            <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                                alt="Marbella coastal view" class="guide-article__image">
+                            
+                            <h4>Why Choose Marbella for Your Investment?</h4>
+                            <p>
+                                The Marbella real estate market has shown remarkable resilience and growth over the past decade. 
+                                International buyers are drawn to the area's political stability, favorable tax environment, and 
+                                exceptional quality of life. Our residential complex represents the pinnacle of modern living 
+                                in this prestigious location.
+                            </p>
+                            
+                            <p>
+                                Located in the heart of Marbella, our development offers easy access to Puerto Banús, world-class 
+                                golf courses, and pristine beaches. The combination of luxury amenities, prime location, and 
+                                professional property management makes this an ideal investment opportunity for discerning buyers.
+                            </p>
+                            
+                            <h4>Investment Potential and ROI</h4>
+                            <p>
+                                Marbella's rental market remains strong year-round, with peak seasons delivering exceptional returns. 
+                                Our properties are designed to attract both short-term vacation rentals and long-term residents, 
+                                providing flexibility for your investment strategy. The growing international interest in Spanish 
+                                real estate, combined with Marbella's limited supply of premium properties, creates a compelling 
+                                investment case.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Block 4: Distance to Key Places -->
+            <section class="distances" id="distances">
+                <div class="container">
+                    <h2 class="section-title">Distance to Key Places</h2>
+                    <div class="distances__grid">
+                        <div class="distance-card">
+                            <div class="distance-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                                </svg>
+                            </div>
+                            <h3 class="distance-card__title">Malaga Airport</h3>
+                            <p class="distance-card__distance">45 minutes</p>
+                        </div>
+                        
+                        <div class="distance-card">
+                            <div class="distance-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3 13h2v7H3zm4 0h2v7H7zm4 0h2v7h-2zm4 0h2v7h-2zm4 0h2v7h-2zM2 9l10-7 10 7v2H2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="distance-card__title">Beach</h3>
+                            <p class="distance-card__distance">5 minutes walk</p>
+                        </div>
+                        
+                        <div class="distance-card">
+                            <div class="distance-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="distance-card__title">Supermarket</h3>
+                            <p class="distance-card__distance">3 minutes walk</p>
+                        </div>
+                        
+                        <div class="distance-card">
+                            <div class="distance-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                                </svg>
+                            </div>
+                            <h3 class="distance-card__title">International School</h3>
+                            <p class="distance-card__distance">10 minutes drive</p>
+                        </div>
+                        
+                        <div class="distance-card">
+                            <div class="distance-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="distance-card__title">Puerto Banús</h3>
+                            <p class="distance-card__distance">8 minutes drive</p>
+                        </div>
+                        
+                        <div class="distance-card">
+                            <div class="distance-card__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.65 10C11.7 7.31 8.9 5.5 5.77 6.12c-2.29.46-4.15 2.29-4.63 4.58C.32 14.57 2.92 18 6.71 18H20c2.76 0 5-2.24 5-5s-2.24-5-5-5c-1.57 0-2.96.73-3.87 1.87l1.48 1.48c.4-.4.95-.65 1.56-.65 1.1 0 2 .9 2 2s-.9 2-2 2H6.71c-1.42 0-2.58-1.16-2.58-2.58 0-1.15.75-2.12 1.79-2.44 1.37-.42 2.8.24 3.31 1.5L12.65 10z"/>
+                                </svg>
+                            </div>
+                            <h3 class="distance-card__title">Golf Course</h3>
+                            <p class="distance-card__distance">5 minutes drive</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 5: Photo Gallery -->
+            <section class="gallery" id="gallery">
+                <div class="container">
+                    <h2 class="section-title">Photo Gallery</h2>
+                    <div class="gallery__grid">
+                        <div class="gallery__item" data-src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                            <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Luxury apartment exterior" class="gallery__image">
+                        </div>
+                        <div class="gallery__item" data-src="https://images.pexels.com/photos/1571453/pexel-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                            <img src="https://images.pexels.com/photos/1571453/pexel-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Modern living room" class="gallery__image">
+                        </div>
+                        <div class="gallery__item" data-src="https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                            <img src="https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Luxury kitchen" class="gallery__image">
+                        </div>
+                        <div class="gallery__item" data-src="https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                            <img src="https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bedroom with ocean view" class="gallery__image">
+                        </div>
+                        <div class="gallery__item" data-src="https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                            <img src="https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Swimming pool area" class="gallery__image">
+                        </div>
+                        <div class="gallery__item" data-src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                            <img src="https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Terrace with sea view" class="gallery__image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox">
+                <div class="lightbox__overlay"></div>
+                <div class="lightbox__content">
+                    <button class="lightbox__close" id="lightboxClose">&times;</button>
+                    <button class="lightbox__prev" id="lightboxPrev">&#8249;</button>
+                    <img src="" alt="" class="lightbox__image" id="lightboxImage">
+                    <button class="lightbox__next" id="lightboxNext">&#8250;</button>
+                </div>
+            </div>
+
+            <!-- Block 6: Location -->
+            <section class="location" id="location">
+                <div class="container">
+                    <h2 class="section-title">Location</h2>
+                    <div class="location__content">
+                        <div class="location__map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.1234567890!2d-4.9004!3d36.5095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDMwJzM0LjIiTiA0wrA1NCcwMS40Ilc!5e0!3m2!1sen!2ses!4v1234567890"
+                                width="100%" 
+                                height="400" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="location__address">
+                            <p class="location__address-text">
+                                <svg class="location__address-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                </svg>
+                                <a href="https://maps.google.com/?q=Av.+Ricardo+Soriano,+29601+Marbella,+Spain" target="_blank" rel="noopener" class="location__address-link">
+                                    Av. Ricardo Soriano, 29601 Marbella, Spain
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 7: Video -->
+            <section class="video-section" id="video">
+                <div class="container">
+                    <h2 class="section-title">Video</h2>
+                    <div class="video-wrapper">
+                        <video class="video-player" controls poster="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800">
+                            <source src="https://sample-videos.com/zip/10/mp4/480/big_buck_bunny_480p_1mb.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 8: Reviews -->
+            <section class="reviews" id="reviews">
+                <div class="container">
+                    <h2 class="section-title">Verified Google Reviews</h2>
+                    <div class="reviews__grid">
+                        <div class="review-card">
+                            <div class="review-card__header">
+                                <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                                    alt="Sarah Johnson" class="review-card__avatar">
+                                <div class="review-card__info">
+                                    <h3 class="review-card__name">Sarah Johnson</h3>
+                                    <div class="review-card__rating">
+                                        <span class="review-card__stars">★★★★★</span>
+                                        <span class="review-card__date">2 months ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-card__text">
+                                "Absolutely stunning property with exceptional service from Elena and her team. 
+                                The location is perfect - walking distance to the beach and all amenities. 
+                                Highly recommend for anyone looking for luxury living in Marbella."
+                            </p>
+                            <a href="https://maps.google.com/" target="_blank" rel="noopener" class="review-card__link">
+                                View on Google Maps
+                            </a>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="review-card__header">
+                                <img src="https://images.pexels.com/photos/3777931/pexels-photo-3777931.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                                    alt="Michael Torres" class="review-card__avatar">
+                                <div class="review-card__info">
+                                    <h3 class="review-card__name">Michael Torres</h3>
+                                    <div class="review-card__rating">
+                                        <span class="review-card__stars">★★★★★</span>
+                                        <span class="review-card__date">1 month ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-card__text">
+                                "Outstanding investment opportunity! The property management is professional, 
+                                and the rental returns have exceeded our expectations. The complex offers 
+                                world-class amenities and is perfectly positioned in Marbella."
+                            </p>
+                            <a href="https://maps.google.com/" target="_blank" rel="noopener" class="review-card__link">
+                                View on Google Maps
+                            </a>
+                        </div>
+                        
+                        <div class="review-card">
+                            <div class="review-card__header">
+                                <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                                    alt="Anna Mueller" class="review-card__avatar">
+                                <div class="review-card__info">
+                                    <h3 class="review-card__name">Anna Mueller</h3>
+                                    <div class="review-card__rating">
+                                        <span class="review-card__stars">★★★★★</span>
+                                        <span class="review-card__date">3 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-card__text">
+                                "We couldn't be happier with our purchase. The quality of construction is 
+                                exceptional, and the views are breathtaking. Elena made the entire process 
+                                seamless from start to finish. A true gem in Marbella!"
+                            </p>
+                            <a href="https://maps.google.com/" target="_blank" rel="noopener" class="review-card__link">
+                                View on Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 9: Similar Properties -->
+            <section class="similar-properties" id="similar-properties">
+                <div class="container">
+                    <h2 class="section-title">See similar properties — choose with confidence</h2>
+                    <div class="properties__grid">
+                        <div class="property-card">
+                            <img src="https://images.pexels.com/photos/1571461/pexels-photo-1571461.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                alt="Costa Brava Residence" class="property-card__image">
+                            <div class="property-card__content">
+                                <h3 class="property-card__title">Costa Brava Residence</h3>
+                                <p class="property-card__description">
+                                    Exclusive beachfront apartments with panoramic Mediterranean views. 
+                                    Modern amenities and prime location near Puerto Banús.
+                                </p>
+                                <a href="#" class="property-card__link">Learn More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="property-card">
+                            <img src="https://images.pexels.com/photos/1571462/pexels-photo-1571462.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                alt="Golden Mile Complex" class="property-card__image">
+                            <div class="property-card__content">
+                                <h3 class="property-card__title">Golden Mile Complex</h3>
+                                <p class="property-card__description">
+                                    Luxury penthouses and apartments on Marbella's prestigious Golden Mile. 
+                                    Walking distance to beach clubs and fine dining.
+                                </p>
+                                <a href="#" class="property-card__link">Learn More</a>
+                            </div>
+                        </div>
+                        
+                        <div class="property-card">
+                            <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                alt="Marina Gardens" class="property-card__image">
+                            <div class="property-card__content">
+                                <h3 class="property-card__title">Marina Gardens</h3>
+                                <p class="property-card__description">
+                                    Contemporary residential complex with lush gardens and resort-style amenities. 
+                                    Perfect for both permanent residence and investment.
+                                </p>
+                                <a href="#" class="property-card__link">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Block 10: Footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__links">
+                        <a href="privacy-policy.html" class="footer__link">Privacy Policy</a>
+                        <a href="cookies-policy.html" class="footer__link">Cookies Policy</a>
+                    </div>
+                    
+                    <a href="index.html#contact" class="footer__callback-btn" id="callbackBtn">
+                        Request a Call
+                    </a>
+                </div>
+                
+                <div class="footer__bottom">
+                    <p class="footer__copyright">
+                        © 2024 Marbella Residential Complex. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
