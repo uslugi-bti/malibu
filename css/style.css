@@ -814,7 +814,7 @@ main {
 
 .distances {
     padding: 100px 0;
-    background: #f8fafc;
+    background: #ffffff;
 }
 
 .distances__grid {
@@ -865,7 +865,7 @@ main {
 /* Gallery Section */
 .gallery {
     padding: 100px 0;
-    background: white;
+    background: #f8fafc;
 }
 
 .gallery__grid {
@@ -1088,7 +1088,7 @@ main {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* Reviews Section */
@@ -1099,35 +1099,28 @@ main {
 
 .reviews__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
 .review-card {
     background: white;
-    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    align-self: start;
+    overflow: hidden;
+}
+
+.review-card img {
+    display: block;
+    width: 100%;
 }
 
 .review-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.review-card::before {
-    content: '"';
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    font-size: 60px;
-    color: #f59e0b;
-    font-family: serif;
 }
 
 .review-card__header {
@@ -1141,7 +1134,12 @@ main {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    object-fit: cover;
+    background-color: #2563eb;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .review-card__name {
