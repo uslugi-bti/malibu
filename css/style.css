@@ -197,6 +197,10 @@ main {
     margin: 0px 20px 0px 0px;
 }
 
+.not-home .header__item a {
+    color: #1e293b;
+}
+
 .header__item a {
     font-size: 17px;
     font-weight: 500;
@@ -994,8 +998,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 90vh;
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1012,20 +1016,34 @@ main {
 .lightbox__prev,
 .lightbox__next {
     position: absolute;
+    width: 40px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.9);
     border: none;
-    font-size: 24px;
-    padding: 15px;
     cursor: pointer;
     border-radius: 50%;
     transition: all 0.3s ease;
     color: #1e293b;
 }
 
+.lightbox__close::before,
+.lightbox__prev::before,
+.lightbox__next::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
 .lightbox__close {
     top: 20px;
     right: 20px;
-    font-size: 30px;
+}
+
+.lightbox__close::before {
+    content: "×";
 }
 
 .lightbox__prev {
@@ -1034,10 +1052,18 @@ main {
     transform: translateY(-50%);
 }
 
+.lightbox__prev::before {
+    content: '‹';
+}
+
 .lightbox__next {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.lightbox__next::before {
+    content: '›';
 }
 
 .lightbox__close:hover,
@@ -1130,6 +1156,11 @@ main {
     height: 0;
     padding: 0px 0px 60% 0px;
     background-color: #000000;
+    margin: 0px 0px 20px 0px;
+}
+
+.video-wrapper:last-child {
+    margin: 0;
 }
 
 .video-player {
@@ -1294,7 +1325,7 @@ main {
 }
 
 .policy-page .container {
-    padding: 50px 0px;
+    padding: 50px 20px;
 }
 
 .policy {

@@ -66,7 +66,14 @@
         <main class="home-page">
             <!-- Block 1: Hero Section -->
             <section class="hero" id="hero">
-                <div class="hero__background" style="background-image: url('img/gallery/15.png');"></div>
+                <div class="hero__background" style="background-image: url('img/hero/01.jpg');"></div>
+                <style>
+                    @media (max-width: 768px) {
+                        .hero__background {
+                            background-image: url('img/hero/02.jpg') !important;
+                        }
+                    }
+                </style>
                 <div class="hero__overlay"></div>
                 
                 <div class='container'>
@@ -349,7 +356,13 @@
                     <h2 class="section-title">Video</h2>
                     <div class="video-wrapper">
                         <video class="video-player" controls>
-                            <source src="https://sample-videos.com/zip/10/mp4/480/big_buck_bunny_480p_1mb.mp4" type="video/mp4">
+                            <source src="img/video/01.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-wrapper">
+                        <video class="video-player" controls>
+                            <source src="img/video/02.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
