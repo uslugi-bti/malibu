@@ -1813,7 +1813,16 @@ main {
     
     .lightbox__prev,
     .lightbox__next {
-        display: none;
+        width: 34px;
+        height: 34px;
+    }
+
+    .lightbox__prev {
+        left: 5px;
+    }
+
+    .lightbox__next {
+        right: 5px;
     }
     
     .menu-overlay__link {
