@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marbella Residential Complex - Роскошная недвижимость в Марбелье</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Marbella Residential Complex - Luxury Property in Marbella</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,6 +26,33 @@
     </div>
     <div class='wrapper'>
         <header class="hero__header">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="header__item">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="header__item">
+                    <a href="#guide">Guide</a>
+                </li>
+                <li class="header__item">
+                    <a href="#gallery">Photo Gallery</a>
+                </li>
+                <li class="header__item">
+                    <a href="#distances">Distance to Key Places</a>
+                </li>
+                <li class="header__item">
+                    <a href="#Location">Location</a>
+                </li>
+                <li class="header__item">
+                    <a href="#video">Video</a>
+                </li>
+                <li class="header__item">
+                    <a href="#reviews">Reviews</a>
+                </li>
+            </ul>
+
             <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
                 <span class="burger-menu__line"></span>
                 <span class="burger-menu__line"></span>
@@ -40,7 +65,7 @@
         </header>
         <main class="home-page">
             <!-- Block 1: Hero Section -->
-            <section class="hero">
+            <section class="hero" id="hero">
                 <div class="hero__background" style="background-image: url('img/gallery/15.png');"></div>
                 <div class="hero__overlay"></div>
                 
@@ -240,8 +265,8 @@
                             <div class="distance-card__icon">
                                 <img src="img/distances/01.svg" alt="distances">
                             </div>
-                            <h3 class="distance-card__title">Malaga Airport</h3>
-                            <p class="distance-card__distance">41 min drive</p>
+                            <h3 class="distance-card__title">Málaga Airport</h3>
+                            <p class="distance-card__distance">59 km – 41 min drive</p>
                         </div>
                         
                         <div class="distance-card">
@@ -249,23 +274,23 @@
                                 <img src="img/distances/02.svg" alt="distances">
                             </div>
                             <h3 class="distance-card__title">Beach</h3>
-                            <p class="distance-card__distance">1 min walk</p>
+                            <p class="distance-card__distance">43 m – 1 min walk</p>
                         </div>
                         
                         <div class="distance-card">
                             <div class="distance-card__icon">
                                 <img src="img/distances/03.svg" alt="distances">
                             </div>
-                            <h3 class="distance-card__title">Supermarket</h3>
-                            <p class="distance-card__distance">8 min drive</p>
+                            <h3 class="distance-card__title">Premium Supermarket El Corte Inglés</h3>
+                            <p class="distance-card__distance">2.7 km – 8 min drive</p>
                         </div>
                         
                         <div class="distance-card">
                             <div class="distance-card__icon">
                                 <img src="img/distances/04.svg" alt="distances">
                             </div>
-                            <h3 class="distance-card__title">International School</h3>
-                            <p class="distance-card__distance">6 min drive</p>
+                            <h3 class="distance-card__title">Laude San Pedro International School</h3>
+                            <p class="distance-card__distance">2.4 km – 6 min drive</p>
                         </div>
                         
                         <div class="distance-card">
@@ -273,14 +298,14 @@
                                 <img src="img/distances/05.svg" alt="distances">
                             </div>
                             <h3 class="distance-card__title">Puerto Banús</h3>
-                            <p class="distance-card__distance">14 min walk</p>
+                            <p class="distance-card__distance">1.4 km – 14 min walk</p>
                         </div>
                         
                         <div class="distance-card">
                             <div class="distance-card__icon">
                                 <img src="img/distances/06.svg" alt="distances">
                             </div>
-                            <h3 class="distance-card__title">Golf Course</h3>
+                            <h3 class="distance-card__title">Golf  Real Club de Golf Las Brisas</h3>
                             <p class="distance-card__distance">2 km</p>
                         </div>
                     </div>
@@ -331,34 +356,40 @@
                 </div>
             </section>
 
-            <!-- Block 8: Reviews -->
-            <section class="reviews" id="reviews">
+            <div class="feedbacks" id="reviews">
                 <div class="container">
                     <h2 class="section-title">Verified Google Reviews</h2>
-                    <div class="reviews__grid">
-                        <div class="review-card">
-                            <a href="https://maps.app.goo.gl/qZUm4fzkCcjg879bA">
-                                <img src="img/feedbacks/01.png" alt="review">
-                            </a>
-                        </div>
-                        <div class="review-card">
-                            <a href="https://maps.app.goo.gl/XdKUD4fMkGktzqudA">
-                                <img src="img/feedbacks/02.png" alt="review">
-                            </a>
-                        </div>
-                        <div class="review-card">
-                            <a href="https://maps.app.goo.gl/U87Dw6VTEXfiqE2g8">
-                                <img src="img/feedbacks/03.png" alt="review">
-                            </a>
-                        </div>
-                        <div class="review-card">
-                            <a href="https://maps.app.goo.gl/VPXmgBgwQ3vcHah87">
-                                <img src="img/feedbacks/04.png" alt="review">
-                            </a>
+                    <div class="feedbacks__slider-wrapper">
+                        <div class="swiper feedbacks__slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="https://maps.app.goo.gl/qZUm4fzkCcjg879bA">
+                                        <img src="img/feedbacks/01.png" alt="feedbacks">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://maps.app.goo.gl/XdKUD4fMkGktzqudA">
+                                        <img src="img/feedbacks/02.png" alt="feedbacks">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://maps.app.goo.gl/U87Dw6VTEXfiqE2g8">
+                                        <img src="img/feedbacks/03.png" alt="feedbacks">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="https://maps.app.goo.gl/VPXmgBgwQ3vcHah87">
+                                        <img src="img/feedbacks/04.png" alt="feedbacks">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- Block 9: Similar Properties -->
             <section class="similar-properties" id="similar-properties">
@@ -371,7 +402,7 @@
                             <div class="property-card__content">
                                 <h3 class="property-card__title">Las Terrazas de Atalaya</h3>
                                 <p class="property-card__description">Las Terrazas de Atalaya is a new residential complex located in the greenest and most peaceful area between Marbella and Estepona.</p>
-                                <a href="#" class="property-card__link">Learn More</a>
+                                <a href="http://terrazas-atalaya.com" class="property-card__link">Learn More</a>
                             </div>
                         </div>
 
@@ -381,7 +412,7 @@
                             <div class="property-card__content">
                                 <h3 class="property-card__title">Marques De Guadalmina</h3>
                                 <p class="property-card__description">Marques De Guadalmina — a modern residential complex in Estepona with spacious apartments, pools, spa, and lush green surroundings near the sea and golf courses.</p>
-                                <a href="#" class="property-card__link">Learn More</a>
+                                <a href="https://marquesdeguadalminaestepona.com/" class="property-card__link">Learn More</a>
                             </div>
                         </div>
                         
@@ -391,7 +422,7 @@
                             <div class="property-card__content">
                                 <h3 class="property-card__title">MARE - MARBELLA</h3>
                                 <p class="property-card__description">Mare Marbella – a residential complex designed for family living.</p>
-                                <a href="#" class="property-card__link">Learn More</a>
+                                <a href="https://www.mare-marbella.com/" class="property-card__link">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -399,29 +430,53 @@
             </section>
         </main>
 
-        <!-- Block 10: Footer -->
-        <footer class="footer" id="footer">
+        <footer class="footer">
             <div class="container">
-                <div class="footer__content">
-                    <div class="footer__links">
-                        <a href="privacy-policy.html" class="footer__link">Privacy Policy</a>
-                        <a href="cookies-policy.html" class="footer__link">Cookies Policy</a>
+                <div class="footer__body">
+                    <div class="footer__content">
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="https://maps.app.goo.gl/t8YFxAX2HHQqDNvQ8">Ventura del Mar, 14B, 29660 Marbella, Málaga</a>
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <a href="https://wa.me/34611004850" class="footer__callback-btn" id="callbackBtn">
-                        Request a Call
-                    </a>
+                    <div class="footer__content">
+                        <div class="footer-content__title title">
+                            <h2>Info</h2>
+                        </div>
+                        <ul class="footer-content__list">
+                            <li class="footer-content__item">
+                                <a href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li class="footer-content__item">
+                                <a href="cookies-policy.html">Cookies Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__form">
+                        <div class="footer-form__title title">
+                            <h2>Get in Touch</h2>
+                        </div>
+                        <div class="footer-form__body">
+                            <div class="footer-form__link">
+                                <a href="https://wa.me/34611004850">Request Call</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="footer__bottom">
-                    <p class="footer__copyright">
-                        © 2025 Marbella Residential Complex. All rights reserved.
-                    </p>
+                <div class="footer__policy">
+                    <div class="footer-policy__text">
+                        <p>&#xA9; 2025 Urbanizacion Malibu. All rights reserved.</p>
+                    </div>
+                    <div class="footer-policy__link">
+                        <a href="index.html#hero">Back to Top</a>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/script.js"></script>
